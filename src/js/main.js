@@ -136,3 +136,10 @@ function playAudioBtn(event){
 // ---------------------------------------------
 
 window.playAudioBtn = playAudioBtn;
+
+// cursor
+new kursor({
+  type: 1,
+  removeDefaultCursor: true,
+  color: '#da2a1e'
+});
