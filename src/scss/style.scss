@@ -26,7 +26,9 @@
   }
 }
 
-#audio {
+
+
+#audio_btn{
   > i {
     transition: all 0.4s;
   }
@@ -35,4 +37,9 @@
       color: #da2a1e;
     }
   }
+  &:active{
+    border: 0!important;
+    outline: 0!important;
+  }
+
 }
