@@ -13,7 +13,6 @@ const wordTemplate = $.querySelector('#word_template');
 const api_response_wrapper = $.querySelector('#api_response_wrapper');
 
 
-
 // dynamic tab change
 window.addEventListener('blur', () => {
   $.title = 'come back 😥';
@@ -30,13 +29,16 @@ searchInput.addEventListener('keypress', (event) => {
 });
 
 async function handleUserRequest() {
+  const queryProcessText = $.querySelector('#queryProcessText');
   api_response_wrapper.innerHTML = null;
   let word = searchInput.value;
+  queryProcessText.innerHTML = `searching the meaning of ${word}`
   if (word.trim() === '')
     fireAlert('Error!', 'Empty values ​​are not allowed', 'error');
   else {
     try {
       let response = await sendApiRequest(word.toLowerCase());
+      queryProcessText.innerHTML = null;
       addApiResponse(response);
     } catch (error) {
       fireAlert('404', `"${word}" not found 🤔`, 'error');
