@@ -4,6 +4,8 @@
     <pug src="src/pug/head.pug" />
   </head>
   <body>
+      <!-- card template -->
+      <pug src="src/pug/templates/word.template.pug" />
       <!-- <pug src="src/pug/index.pug" />  -->
       <div class="container-fluid">
         <div class="container">
@@ -33,15 +35,15 @@
           <!-- main word content -->
           <div class="row mt-5">
             <main class="col-12 col-lg-10 offset-lg-1" id="word_info_wrapper">
-                <div class="row">
-                  <section class="col-12 d-flex justify-content-between border-bottom">
+                <div class="row" id="api_response_wrapper">
+                  <!-- <section class="col-12 d-flex justify-content-between border-bottom">
                     <div id="word_info">
                       <h1 id="word">Hello</h1>
                       <p id="subInfo" class="text-orange">/həˈloʊ/</p>
                     </div>
                     <button id="audio_btn" class="btn fs-3 outline-0 border-0"><i class="fa-solid fa-volume-high text-orange"></i></button>
-                  </section>
-                  <section class="meanings col-12 col-lg-6 mt-4" >
+                  </section> -->
+                  <!-- <section class="meanings col-12 col-lg-6 mt-4" >
                     <div class="card">
                       <h5 class="partOfSpeech card-header">noun</h5>
                       <div class="card-body">
@@ -65,7 +67,7 @@
                         </div>
                       </div>
                     </div>
-                  </section>
+                  </section> -->
                 </div>
             </main>
           </div>
@@ -78,7 +80,7 @@
         </div>
       </div>
 
-    <audio id="audio" src="https://api.dictionaryapi.dev/media/pronunciations/en/hello-uk.mp3"></audio>
+    <audio id="audio" src=""></audio>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
   <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
