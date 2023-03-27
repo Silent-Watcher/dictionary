@@ -2,19 +2,16 @@
 import fireAlert from './helpers/alert.js';
 import capitalize from './helpers/text.helper.js';
 
-const $ = document;
-const defaultTitle = 'Dictionary';
-const searchBtn = $.querySelector('#search_btn');
-const searchInput = $.querySelector('#search_input');
-const API_URL = import.meta.env.VITE_BASE_URL;
-const audio = $.querySelector('#audio');
-const audioBtn = $.querySelector('#audio_btn');
+const $ = document,
+  defaultTitle = 'Dictionary',
+  searchBtn = $.querySelector('#search_btn'),
+  searchInput = $.querySelector('#search_input'),
+  API_URL = import.meta.env.VITE_BASE_URL,
+  audio = $.querySelector('#audio'),
+  audioBtn = $.querySelector('#audio_btn');
 
 window.addEventListener('load', () => {
   isAudioSrcProvided(audio);
-  setTimeout(() => {
-    searchInput.focus();
-  }, 2000);
 });
 
 // dynamic tab change
@@ -50,6 +47,12 @@ async function handleUserRequest() {
   }
 }
 
+audioBtn.addEventListener('click', function () {
+  if (isAudioSrcProvided(audio)) audio.play();
+  else fireAlert('Error', 'failed to load the audio file');
+});
+
+// api operations
 function sendApiRequest(word) {
   return fetch(`${API_URL}/${word}`).then((res) => {
     if (res.status === 404) {
@@ -64,16 +67,12 @@ function addApiResponse(response) {
   $.querySelector('#word').innerHTML = capitalize(response.at(0).word);
   audio.src = response[0].phonetics[0].audio;
 }
+// ---------------------------------------------
 
-audioBtn.addEventListener('click', function () {
-  if (isAudioSrcProvided(audio)) audio.play();
-  else fireAlert('Error', 'failed to load the audio file');
-});
-
-
+// audio button validations
 function isAudioSrcProvided(audioElement) {
   if (audioElement.src === window.location.href) {
-    disableActiveBtn(audioBtn)
+    disableActiveBtn(audioBtn);
     return false;
   } else {
     activateAudioBtn(audioBtn);
@@ -89,10 +88,11 @@ function activateAudioBtn(audioBtn) {
   );
 }
 
-function disableActiveBtn(audioBtn){
-    audioBtn.setAttribute('disabled', '');
-    audioBtn.firstElementChild.classList.replace(
-      'fa-volume-high',
-      'fa-volume-xmark'
-    );
+function disableActiveBtn(audioBtn) {
+  audioBtn.setAttribute('disabled', '');
+  audioBtn.firstElementChild.classList.replace(
+    'fa-volume-high',
+    'fa-volume-xmark'
+  );
 }
+// ---------------------------------------------
