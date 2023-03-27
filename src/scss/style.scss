@@ -1,8 +1,38 @@
 @charset 'utf-8';
-@import "pulse";
+@import 'pulse';
 
-
-.text-orange{
+.text-orange {
+  color: #f44336;
+}
+#search_btn {
+  transition: all 0.4s;
+  border-color: #f44336 !important;
+  > i {
+    transition: all 0.4s;
     color: #f44336;
+  }
+  &:hover {
+    background-color: #f44336;
+    > i {
+      color: #f5f5f5;
+    }
+  }
+}
+#api_link {
+  transition: all 0.4s;
+  color: #202020;
+  &:hover {
+    color: #f44336;
+  }
+}
 
+#audio {
+  > i {
+    transition: all 0.4s;
+  }
+  &:hover {
+    > i {
+      color: #da2a1e;
+    }
+  }
 }

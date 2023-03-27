@@ -7,6 +7,7 @@
       <!-- <pug src="src/pug/index.pug" />  -->
       <div class="container-fluid">
         <div class="container">
+          <!-- search bar -->
           <div class="row">
             <header class="mt-5">
               <section class="col-12">
@@ -15,7 +16,7 @@
                     <input type="text" class="form-control" id="search_input" placeholder="English word">
                     <label for="search_input">English word</label>
                   </div>
-                  <button class="btn btn-outline-secondary" type="button" id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                  <button class="btn border" type="button" id="search_btn"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </div>
               </section>
               <section class="col-12 mt-5 text-center">
@@ -24,11 +25,13 @@
               </section>
             </header>
           </div>
+          <!-- api link -->
           <div class="row">
-            <p class="text-center mt-5">Data provided by <a class="link-dark" href="https://dictionaryapi.dev/" target="_blank">dictionaryapi.dev</a></p>
+            <p class="text-center mt-5">Data provided by <a id="api_link" class="text-decoration-none fw-bold" href="https://dictionaryapi.dev/" target="_blank">dictionaryapi.dev</a></p>
           </div>
+          <!-- main word content -->
           <div class="row mt-5">
-            <main class="col-12" id="word_info_wrapper">
+            <main class="col-12 col-lg-10 offset-lg-1" id="word_info_wrapper">
                 <div class="row">
                   <section class="col-12 d-flex justify-content-between border-bottom">
                     <div id="word_info">
@@ -37,7 +40,7 @@
                     </div>
                     <button id="audio" class="btn fs-3"><i class="fa-solid fa-volume-high text-orange"></i></button>
                   </section>
-                  <section class="meanings col-12 mt-4" >
+                  <section class="meanings col-12 col-lg-6 mt-4" >
                     <div class="card">
                       <h5 class="partOfSpeech card-header">noun</h5>
                       <div class="card-body">
@@ -65,9 +68,10 @@
                 </div>
             </main>
           </div>
+          <!-- footer -->
           <div class="row">
             <footer>
-              <p class="text-center mt-5">made with 🧡 and ☕</p>
+              <p class="text-center mt-4">made with 🧡 and ☕</p>
             </footer>
           </div>
         </div>
