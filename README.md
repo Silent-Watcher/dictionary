@@ -18,7 +18,6 @@ This is a dictionary web application that allows users to search for word defini
 -   [Installation](https://github.com/Silent-Watcher/dictionary#Installation)
 -   [usage](https://github.com/Silent-Watcher/dictionary#usage)
 -   [Deployment](https://github.com/Silent-Watcher/dictionary#deployment)
--   [Screenshots](https://github.com/Silent-Watcher/dictionary#Screenshots)
 -   [Acknowledgements](https://github.com/Silent-Watcher/dictionary#Acknowledgements)
 -   [Feedback](https://github.com/Silent-Watcher/dictionary#Feedback)
 -   [License](https://github.com/Silent-Watcher/dictionary#License)
@@ -84,13 +83,6 @@ To deploy the application, follow these steps:
     4.  Set the build command to `yarn build`.
     5.  Set the publish directory to `dist`.
     6.  Deploy the site.
-
-
-
-
-## Screenshots
-
-![App Screenshot](https://iili.io/HNOQ7FS.png)
 
 
 ## Acknowledgements
