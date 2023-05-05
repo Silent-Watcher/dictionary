@@ -36,7 +36,7 @@ This is a dictionary web application that allows users to search for word defini
 
 https://dictionary-app-dev.netlify.app/
 
-## preview
+## Preview
 <img src='https://iili.io/HSvabx2.png'>
 
 ## Prerequisites
