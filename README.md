@@ -13,6 +13,7 @@ This is a dictionary web application that allows users to search for word defini
 
 -   [Features](https://github.com/Silent-Watcher/dictionary#features)
 -   [demo](https://github.com/Silent-Watcher/dictionary#demo)
+-   [preview](https://github.com/Silent-Watcher/dictionary#preview)
 -   [Prerequisites](https://github.com/Silent-Watcher/dictionary#Prerequisites)
 -   [Installation](https://github.com/Silent-Watcher/dictionary#Installation)
 -   [usage](https://github.com/Silent-Watcher/dictionary#usage)
@@ -30,9 +31,13 @@ This is a dictionary web application that allows users to search for word defini
 -   Intuitive navigation for browsing multiple definitions.
 -   Clean and modern design.
 -   Fully responsive on all devices.
+
 ## Demo
 
 https://dictionary-app-dev.netlify.app/
+
+## preview
+<img src='https://iili.io/HSvabx2.png'>
 
 ## Prerequisites
 In order to run this project, you will need to have the following installed on your computer:
