@@ -9,7 +9,8 @@
     "preview": "vite preview"
   },
   "devDependencies": {
-    "vite": "^4.2.0"
+    "vite": "^4.2.0",
+    "vite-plugin-pwa": "^0.14.7"
   },
   "dependencies": {
     "sass": "^1.60.0",
