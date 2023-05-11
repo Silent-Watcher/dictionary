@@ -6,6 +6,7 @@ const options = { pretty: true }; // FIXME: pug pretty is deprecated!
 const locals = { title: 'Dictionary' };
 
 export default defineConfig({
+  base: '/dictionary',
   plugins: [
     pugPlugin(options, locals),
     VitePWA({
