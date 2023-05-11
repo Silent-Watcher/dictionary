@@ -33,7 +33,8 @@ This is a dictionary web application that allows users to search for word defini
 
 ## Demo
 
-https://dictionary-app-dev.netlify.app/
+https://dictionary-app-dev.netlify.app/  (netlify)
+https://silent-watcher.github.io/dictionary/ (GitHub pages)
 
 ## Preview
 <img src='https://iili.io/HSvabx2.png'>
