@@ -32,9 +32,10 @@ This is a dictionary web application that allows users to search for word defini
 -   Fully responsive on all devices.
 
 ## Demo
-
-https://dictionary-app-dev.netlify.app/  (netlify)
-https://silent-watcher.github.io/dictionary/ (GitHub pages)
+### netlify
+https://dictionary-app-dev.netlify.app/ 
+### GitHub pages
+https://silent-watcher.github.io/dictionary/
 
 ## Preview
 <img src='https://iili.io/HSvabx2.png'>
