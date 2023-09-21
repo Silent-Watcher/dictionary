@@ -1,5 +1,5 @@
 
-# Dictionary Web Application
+# Dictionary Web Application :octocat:
 
 This is a dictionary web application that allows users to search for word definitions. The application is built using HTML, CSS, and JavaScript, and utilizes the Vite bundler and Yarn as the package manager. The application is hosted on Netlify.
 
