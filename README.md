@@ -38,7 +38,7 @@ https://dictionary-app-dev.netlify.app/
 https://silent-watcher.github.io/dictionary/
 <p>
  
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Silent-Watcher/magic-Css)
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Silent-Watcher/dictionary)
 
 </p>
 
