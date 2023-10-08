@@ -36,6 +36,12 @@ This is a dictionary web application that allows users to search for word defini
 https://dictionary-app-dev.netlify.app/ 
 ### GitHub pages
 https://silent-watcher.github.io/dictionary/
+<p>
+ 
+[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/Silent-Watcher/magic-Css)
+
+</p>
+
 
 ## Preview
 <img src='https://iili.io/HSvabx2.png'>
